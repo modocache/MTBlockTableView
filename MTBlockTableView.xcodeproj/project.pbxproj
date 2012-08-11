@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F25FF3A15D6A87B00662F86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F25FF3915D6A87B00662F86 /* Foundation.framework */; };
+		5F25FF3F15D6A87B00662F86 /* MTBlockTableView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5F25FF3E15D6A87B00662F86 /* MTBlockTableView.h */; };
+		5F25FF4115D6A87B00662F86 /* MTBlockTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F25FF4015D6A87B00662F86 /* MTBlockTableView.m */; };
+		5F25FF4915D6A87B00662F86 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F25FF4815D6A87B00662F86 /* SenTestingKit.framework */; };
+		5F25FF4B15D6A87B00662F86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F25FF4A15D6A87B00662F86 /* UIKit.framework */; };
+		5F25FF4C15D6A87B00662F86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F25FF3915D6A87B00662F86 /* Foundation.framework */; };
+		5F25FF4F15D6A87B00662F86 /* libMTBlockTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F25FF3615D6A87B00662F86 /* libMTBlockTableView.a */; };
+		5F25FF5515D6A87B00662F86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F25FF5315D6A87B00662F86 /* InfoPlist.strings */; };
+		5F25FF5815D6A87B00662F86 /* MTBlockTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F25FF5715D6A87B00662F86 /* MTBlockTableViewTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F25FF4D15D6A87B00662F86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F25FF2D15D6A87A00662F86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F25FF3515D6A87B00662F86;
+			remoteInfo = MTBlockTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F25FF3415D6A87B00662F86 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				5F25FF3F15D6A87B00662F86 /* MTBlockTableView.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5F25FF3615D6A87B00662F86 /* libMTBlockTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMTBlockTableView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F25FF3915D6A87B00662F86 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5F25FF3D15D6A87B00662F86 /* MTBlockTableView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTBlockTableView-Prefix.pch"; sourceTree = "<group>"; };
+		5F25FF3E15D6A87B00662F86 /* MTBlockTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTBlockTableView.h; sourceTree = "<group>"; };
+		5F25FF4015D6A87B00662F86 /* MTBlockTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTBlockTableView.m; sourceTree = "<group>"; };
+		5F25FF4715D6A87B00662F86 /* MTBlockTableViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTBlockTableViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F25FF4815D6A87B00662F86 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5F25FF4A15D6A87B00662F86 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		5F25FF5215D6A87B00662F86 /* MTBlockTableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MTBlockTableViewTests-Info.plist"; sourceTree = "<group>"; };
+		5F25FF5415D6A87B00662F86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F25FF5615D6A87B00662F86 /* MTBlockTableViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTBlockTableViewTests.h; sourceTree = "<group>"; };
+		5F25FF5715D6A87B00662F86 /* MTBlockTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTBlockTableViewTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F25FF3315D6A87B00662F86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F25FF3A15D6A87B00662F86 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F25FF4315D6A87B00662F86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F25FF4915D6A87B00662F86 /* SenTestingKit.framework in Frameworks */,
+				5F25FF4B15D6A87B00662F86 /* UIKit.framework in Frameworks */,
+				5F25FF4C15D6A87B00662F86 /* Foundation.framework in Frameworks */,
+				5F25FF4F15D6A87B00662F86 /* libMTBlockTableView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F25FF2B15D6A87A00662F86 = {
+			isa = PBXGroup;
+			children = (
+				5F25FF3B15D6A87B00662F86 /* MTBlockTableView */,
+				5F25FF5015D6A87B00662F86 /* MTBlockTableViewTests */,
+				5F25FF3815D6A87B00662F86 /* Frameworks */,
+				5F25FF3715D6A87B00662F86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F25FF3715D6A87B00662F86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F25FF3615D6A87B00662F86 /* libMTBlockTableView.a */,
+				5F25FF4715D6A87B00662F86 /* MTBlockTableViewTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F25FF3815D6A87B00662F86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F25FF3915D6A87B00662F86 /* Foundation.framework */,
+				5F25FF4815D6A87B00662F86 /* SenTestingKit.framework */,
+				5F25FF4A15D6A87B00662F86 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F25FF3B15D6A87B00662F86 /* MTBlockTableView */ = {
+			isa = PBXGroup;
+			children = (
+				5F25FF3E15D6A87B00662F86 /* MTBlockTableView.h */,
+				5F25FF4015D6A87B00662F86 /* MTBlockTableView.m */,
+				5F25FF3C15D6A87B00662F86 /* Supporting Files */,
+			);
+			path = MTBlockTableView;
+			sourceTree = "<group>";
+		};
+		5F25FF3C15D6A87B00662F86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F25FF3D15D6A87B00662F86 /* MTBlockTableView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F25FF5015D6A87B00662F86 /* MTBlockTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F25FF5615D6A87B00662F86 /* MTBlockTableViewTests.h */,
+				5F25FF5715D6A87B00662F86 /* MTBlockTableViewTests.m */,
+				5F25FF5115D6A87B00662F86 /* Supporting Files */,
+			);
+			path = MTBlockTableViewTests;
+			sourceTree = "<group>";
+		};
+		5F25FF5115D6A87B00662F86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F25FF5215D6A87B00662F86 /* MTBlockTableViewTests-Info.plist */,
+				5F25FF5315D6A87B00662F86 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F25FF3515D6A87B00662F86 /* MTBlockTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F25FF5B15D6A87B00662F86 /* Build configuration list for PBXNativeTarget "MTBlockTableView" */;
+			buildPhases = (
+				5F25FF3215D6A87B00662F86 /* Sources */,
+				5F25FF3315D6A87B00662F86 /* Frameworks */,
+				5F25FF3415D6A87B00662F86 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTBlockTableView;
+			productName = MTBlockTableView;
+			productReference = 5F25FF3615D6A87B00662F86 /* libMTBlockTableView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5F25FF4615D6A87B00662F86 /* MTBlockTableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F25FF5E15D6A87B00662F86 /* Build configuration list for PBXNativeTarget "MTBlockTableViewTests" */;
+			buildPhases = (
+				5F25FF4215D6A87B00662F86 /* Sources */,
+				5F25FF4315D6A87B00662F86 /* Frameworks */,
+				5F25FF4415D6A87B00662F86 /* Resources */,
+				5F25FF4515D6A87B00662F86 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F25FF4E15D6A87B00662F86 /* PBXTargetDependency */,
+			);
+			name = MTBlockTableViewTests;
+			productName = MTBlockTableViewTests;
+			productReference = 5F25FF4715D6A87B00662F86 /* MTBlockTableViewTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F25FF2D15D6A87A00662F86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Mysterious Trousers";
+			};
+			buildConfigurationList = 5F25FF3015D6A87A00662F86 /* Build configuration list for PBXProject "MTBlockTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5F25FF2B15D6A87A00662F86;
+			productRefGroup = 5F25FF3715D6A87B00662F86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F25FF3515D6A87B00662F86 /* MTBlockTableView */,
+				5F25FF4615D6A87B00662F86 /* MTBlockTableViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F25FF4415D6A87B00662F86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F25FF5515D6A87B00662F86 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F25FF4515D6A87B00662F86 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F25FF3215D6A87B00662F86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F25FF4115D6A87B00662F86 /* MTBlockTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F25FF4215D6A87B00662F86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F25FF5815D6A87B00662F86 /* MTBlockTableViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F25FF4E15D6A87B00662F86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F25FF3515D6A87B00662F86 /* MTBlockTableView */;
+			targetProxy = 5F25FF4D15D6A87B00662F86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F25FF5315D6A87B00662F86 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F25FF5415D6A87B00662F86 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F25FF5915D6A87B00662F86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5F25FF5A15D6A87B00662F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F25FF5C15D6A87B00662F86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MTBlockTableView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTBlockTableView/MTBlockTableView-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5F25FF5D15D6A87B00662F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MTBlockTableView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTBlockTableView/MTBlockTableView-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5F25FF5F15D6A87B00662F86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTBlockTableView/MTBlockTableView-Prefix.pch";
+				INFOPLIST_FILE = "MTBlockTableViewTests/MTBlockTableViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5F25FF6015D6A87B00662F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTBlockTableView/MTBlockTableView-Prefix.pch";
+				INFOPLIST_FILE = "MTBlockTableViewTests/MTBlockTableViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F25FF3015D6A87A00662F86 /* Build configuration list for PBXProject "MTBlockTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F25FF5915D6A87B00662F86 /* Debug */,
+				5F25FF5A15D6A87B00662F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F25FF5B15D6A87B00662F86 /* Build configuration list for PBXNativeTarget "MTBlockTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F25FF5C15D6A87B00662F86 /* Debug */,
+				5F25FF5D15D6A87B00662F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5F25FF5E15D6A87B00662F86 /* Build configuration list for PBXNativeTarget "MTBlockTableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F25FF5F15D6A87B00662F86 /* Debug */,
+				5F25FF6015D6A87B00662F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F25FF2D15D6A87A00662F86 /* Project object */;
+}
