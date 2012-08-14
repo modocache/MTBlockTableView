@@ -11,15 +11,35 @@
 		5F25FF3F15D6A87B00662F86 /* MTBlockTableView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5F25FF3E15D6A87B00662F86 /* MTBlockTableView.h */; };
 		5F25FF4115D6A87B00662F86 /* MTBlockTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F25FF4015D6A87B00662F86 /* MTBlockTableView.m */; };
 		5F25FF4915D6A87B00662F86 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F25FF4815D6A87B00662F86 /* SenTestingKit.framework */; };
-		5F25FF4B15D6A87B00662F86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F25FF4A15D6A87B00662F86 /* UIKit.framework */; };
 		5F25FF4C15D6A87B00662F86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F25FF3915D6A87B00662F86 /* Foundation.framework */; };
 		5F25FF4F15D6A87B00662F86 /* libMTBlockTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F25FF3615D6A87B00662F86 /* libMTBlockTableView.a */; };
 		5F25FF5515D6A87B00662F86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F25FF5315D6A87B00662F86 /* InfoPlist.strings */; };
 		5F25FF5815D6A87B00662F86 /* MTBlockTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F25FF5715D6A87B00662F86 /* MTBlockTableViewTests.m */; };
+		5F25FF6215D6AA8900662F86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F25FF6115D6AA8900662F86 /* UIKit.framework */; };
+		5F25FF6415D6AA9200662F86 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F25FF6315D6AA9200662F86 /* CoreGraphics.framework */; };
+		5F25FF6515D6AB0B00662F86 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F25FF6315D6AA9200662F86 /* CoreGraphics.framework */; };
+		5F25FF6615D6AB1000662F86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F25FF6115D6AA8900662F86 /* UIKit.framework */; };
+		5F25FFBD15DAA71C00662F86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F25FF6115D6AA8900662F86 /* UIKit.framework */; };
+		5F25FFBE15DAA71C00662F86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F25FF3915D6A87B00662F86 /* Foundation.framework */; };
+		5F25FFBF15DAA71C00662F86 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F25FF6315D6AA9200662F86 /* CoreGraphics.framework */; };
+		5F25FFC515DAA71C00662F86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F25FFC315DAA71C00662F86 /* InfoPlist.strings */; };
+		5F25FFC715DAA71C00662F86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F25FFC615DAA71C00662F86 /* main.m */; };
+		5F25FFCB15DAA71C00662F86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F25FFCA15DAA71C00662F86 /* AppDelegate.m */; };
+		5F25FFCE15DAA71C00662F86 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F25FFCC15DAA71C00662F86 /* MainStoryboard_iPhone.storyboard */; };
+		5F25FFD115DAA71C00662F86 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F25FFCF15DAA71C00662F86 /* MainStoryboard_iPad.storyboard */; };
+		5F25FFD415DAA71C00662F86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F25FFD315DAA71C00662F86 /* ViewController.m */; };
+		5F25FFDB15DAA8E500662F86 /* libMTBlockTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F25FF3615D6A87B00662F86 /* libMTBlockTableView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		5F25FF4D15D6A87B00662F86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F25FF2D15D6A87A00662F86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F25FF3515D6A87B00662F86;
+			remoteInfo = MTBlockTableView;
+		};
+		5F25FFD915DAA8CE00662F86 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5F25FF2D15D6A87A00662F86 /* Project object */;
 			proxyType = 1;
@@ -49,11 +69,23 @@
 		5F25FF4015D6A87B00662F86 /* MTBlockTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTBlockTableView.m; sourceTree = "<group>"; };
 		5F25FF4715D6A87B00662F86 /* MTBlockTableViewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTBlockTableViewTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F25FF4815D6A87B00662F86 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		5F25FF4A15D6A87B00662F86 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		5F25FF5215D6A87B00662F86 /* MTBlockTableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MTBlockTableViewTests-Info.plist"; sourceTree = "<group>"; };
 		5F25FF5415D6A87B00662F86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5F25FF5615D6A87B00662F86 /* MTBlockTableViewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTBlockTableViewTests.h; sourceTree = "<group>"; };
 		5F25FF5715D6A87B00662F86 /* MTBlockTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTBlockTableViewTests.m; sourceTree = "<group>"; };
+		5F25FF6115D6AA8900662F86 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5F25FF6315D6AA9200662F86 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5F25FFBB15DAA71C00662F86 /* MTBlockTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTBlockTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F25FFC215DAA71C00662F86 /* MTBlockTableViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MTBlockTableViewDemo-Info.plist"; sourceTree = "<group>"; };
+		5F25FFC415DAA71C00662F86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F25FFC615DAA71C00662F86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F25FFC815DAA71C00662F86 /* MTBlockTableViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTBlockTableViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		5F25FFC915DAA71C00662F86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5F25FFCA15DAA71C00662F86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5F25FFCD15DAA71C00662F86 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		5F25FFD015DAA71C00662F86 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		5F25FFD215DAA71C00662F86 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5F25FFD315DAA71C00662F86 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F25FF6415D6AA9200662F86 /* CoreGraphics.framework in Frameworks */,
+				5F25FF6215D6AA8900662F86 /* UIKit.framework in Frameworks */,
 				5F25FF3A15D6A87B00662F86 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,10 +103,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F25FF6615D6AB1000662F86 /* UIKit.framework in Frameworks */,
+				5F25FF6515D6AB0B00662F86 /* CoreGraphics.framework in Frameworks */,
 				5F25FF4915D6A87B00662F86 /* SenTestingKit.framework in Frameworks */,
-				5F25FF4B15D6A87B00662F86 /* UIKit.framework in Frameworks */,
 				5F25FF4C15D6A87B00662F86 /* Foundation.framework in Frameworks */,
 				5F25FF4F15D6A87B00662F86 /* libMTBlockTableView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F25FFB815DAA71C00662F86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F25FFDB15DAA8E500662F86 /* libMTBlockTableView.a in Frameworks */,
+				5F25FFBD15DAA71C00662F86 /* UIKit.framework in Frameworks */,
+				5F25FFBE15DAA71C00662F86 /* Foundation.framework in Frameworks */,
+				5F25FFBF15DAA71C00662F86 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +130,7 @@
 			children = (
 				5F25FF3B15D6A87B00662F86 /* MTBlockTableView */,
 				5F25FF5015D6A87B00662F86 /* MTBlockTableViewTests */,
+				5F25FFC015DAA71C00662F86 /* MTBlockTableViewDemo */,
 				5F25FF3815D6A87B00662F86 /* Frameworks */,
 				5F25FF3715D6A87B00662F86 /* Products */,
 			);
@@ -94,6 +141,7 @@
 			children = (
 				5F25FF3615D6A87B00662F86 /* libMTBlockTableView.a */,
 				5F25FF4715D6A87B00662F86 /* MTBlockTableViewTests.octest */,
+				5F25FFBB15DAA71C00662F86 /* MTBlockTableViewDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,9 +149,10 @@
 		5F25FF3815D6A87B00662F86 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5F25FF6315D6AA9200662F86 /* CoreGraphics.framework */,
+				5F25FF6115D6AA8900662F86 /* UIKit.framework */,
 				5F25FF3915D6A87B00662F86 /* Foundation.framework */,
 				5F25FF4815D6A87B00662F86 /* SenTestingKit.framework */,
-				5F25FF4A15D6A87B00662F86 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,6 +190,31 @@
 			children = (
 				5F25FF5215D6A87B00662F86 /* MTBlockTableViewTests-Info.plist */,
 				5F25FF5315D6A87B00662F86 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F25FFC015DAA71C00662F86 /* MTBlockTableViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5F25FFC915DAA71C00662F86 /* AppDelegate.h */,
+				5F25FFCA15DAA71C00662F86 /* AppDelegate.m */,
+				5F25FFCC15DAA71C00662F86 /* MainStoryboard_iPhone.storyboard */,
+				5F25FFCF15DAA71C00662F86 /* MainStoryboard_iPad.storyboard */,
+				5F25FFD215DAA71C00662F86 /* ViewController.h */,
+				5F25FFD315DAA71C00662F86 /* ViewController.m */,
+				5F25FFC115DAA71C00662F86 /* Supporting Files */,
+			);
+			path = MTBlockTableViewDemo;
+			sourceTree = "<group>";
+		};
+		5F25FFC115DAA71C00662F86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F25FFC215DAA71C00662F86 /* MTBlockTableViewDemo-Info.plist */,
+				5F25FFC315DAA71C00662F86 /* InfoPlist.strings */,
+				5F25FFC615DAA71C00662F86 /* main.m */,
+				5F25FFC815DAA71C00662F86 /* MTBlockTableViewDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -184,6 +258,24 @@
 			productReference = 5F25FF4715D6A87B00662F86 /* MTBlockTableViewTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		5F25FFBA15DAA71C00662F86 /* MTBlockTableViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F25FFD715DAA71C00662F86 /* Build configuration list for PBXNativeTarget "MTBlockTableViewDemo" */;
+			buildPhases = (
+				5F25FFB715DAA71C00662F86 /* Sources */,
+				5F25FFB815DAA71C00662F86 /* Frameworks */,
+				5F25FFB915DAA71C00662F86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F25FFDA15DAA8CE00662F86 /* PBXTargetDependency */,
+			);
+			name = MTBlockTableViewDemo;
+			productName = MTBlockTableViewDemo;
+			productReference = 5F25FFBB15DAA71C00662F86 /* MTBlockTableViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +299,7 @@
 			targets = (
 				5F25FF3515D6A87B00662F86 /* MTBlockTableView */,
 				5F25FF4615D6A87B00662F86 /* MTBlockTableViewTests */,
+				5F25FFBA15DAA71C00662F86 /* MTBlockTableViewDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +310,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F25FF5515D6A87B00662F86 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F25FFB915DAA71C00662F86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F25FFC515DAA71C00662F86 /* InfoPlist.strings in Resources */,
+				5F25FFCE15DAA71C00662F86 /* MainStoryboard_iPhone.storyboard in Resources */,
+				5F25FFD115DAA71C00662F86 /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +358,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5F25FFB715DAA71C00662F86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F25FFC715DAA71C00662F86 /* main.m in Sources */,
+				5F25FFCB15DAA71C00662F86 /* AppDelegate.m in Sources */,
+				5F25FFD415DAA71C00662F86 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -262,6 +375,11 @@
 			isa = PBXTargetDependency;
 			target = 5F25FF3515D6A87B00662F86 /* MTBlockTableView */;
 			targetProxy = 5F25FF4D15D6A87B00662F86 /* PBXContainerItemProxy */;
+		};
+		5F25FFDA15DAA8CE00662F86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F25FF3515D6A87B00662F86 /* MTBlockTableView */;
+			targetProxy = 5F25FFD915DAA8CE00662F86 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -272,6 +390,30 @@
 				5F25FF5415D6A87B00662F86 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5F25FFC315DAA71C00662F86 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F25FFC415DAA71C00662F86 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5F25FFCC15DAA71C00662F86 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F25FFCD15DAA71C00662F86 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		5F25FFCF15DAA71C00662F86 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F25FFD015DAA71C00662F86 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -299,6 +441,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -318,6 +464,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -377,6 +527,41 @@
 			};
 			name = Release;
 		};
+		5F25FFD515DAA71C00662F86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTBlockTableViewDemo/MTBlockTableViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "MTBlockTableViewDemo/MTBlockTableViewDemo-Info.plist";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5F25FFD615DAA71C00662F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTBlockTableViewDemo/MTBlockTableViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "MTBlockTableViewDemo/MTBlockTableViewDemo-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -396,12 +581,22 @@
 				5F25FF5D15D6A87B00662F86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F25FF5E15D6A87B00662F86 /* Build configuration list for PBXNativeTarget "MTBlockTableViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F25FF5F15D6A87B00662F86 /* Debug */,
 				5F25FF6015D6A87B00662F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F25FFD715DAA71C00662F86 /* Build configuration list for PBXNativeTarget "MTBlockTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F25FFD515DAA71C00662F86 /* Debug */,
+				5F25FFD615DAA71C00662F86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
