@@ -30,6 +30,18 @@
         
         return cell;
     }];
+
+    [_tableView setDidSelectRowAtIndexPathBlock:^(UITableView *tableView, NSIndexPath *indexPath) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSString *title = [NSString stringWithFormat:@"Tapped Row %d!", indexPath.row];
+            UIAlertView *av = [[UIAlertView alloc] initWithTitle:title
+                                                         message:nil
+                                                        delegate:nil
+                                               cancelButtonTitle:@"OK"
+                                               otherButtonTitles:nil];
+            [av show];
+        });
+    }];
 }
 
 - (void)viewDidUnload

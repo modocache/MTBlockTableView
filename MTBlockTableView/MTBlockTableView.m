@@ -55,6 +55,165 @@
 
 
 
+#pragma mark - UITableViewDelegate Methods (required)
+
+- (void) tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
+    if (_accessoryButtonTappedForRowWithIndexPathBlock) {
+        _accessoryButtonTappedForRowWithIndexPathBlock(tableView, indexPath);
+    }
+}
+
+- (BOOL) tableView:(UITableView *)tableView canPerformAction:(SEL)action forRowAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
+    if (_canPerformActionForRowAtIndexPathWithSenderBlock) {
+        return _canPerformActionForRowAtIndexPathWithSenderBlock(tableView, action, indexPath, sender);
+    }
+
+    return NO;
+}
+
+- (void) tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (_didDeselectRowAtIndexPathBlock) {
+        _didDeselectRowAtIndexPathBlock(tableView, indexPath);
+    }
+}
+
+- (void) tableView:(UITableView *)tableView didEndEditingRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (_didEndEditingRowAtIndexPathBlock) {
+        _didEndEditingRowAtIndexPathBlock(tableView, indexPath);
+    }
+}
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (_didSelectRowAtIndexPathBlock) {
+        _didSelectRowAtIndexPathBlock(tableView, indexPath);
+    }
+}
+
+- (UITableViewCellEditingStyle) tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (_editingStyleForRowAtIndexPathBlock) {
+        return _editingStyleForRowAtIndexPathBlock(tableView, indexPath);
+    }
+
+    return UITableViewCellEditingStyleNone;
+}
+
+- (CGFloat) tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    if (_heightForFooterInSectionBlock) {
+        return _heightForFooterInSectionBlock(tableView, section);
+    }
+
+    return [self tableView:self viewForHeaderInSection:section].frame.size.height;
+}
+
+- (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    if (_heightForHeaderInSectionBlock) {
+        return _heightForHeaderInSectionBlock(tableView, section);
+    }
+
+    return [self tableView:self viewForFooterInSection:section].frame.size.height;
+}
+
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (_heightForRowAtIndexPathBlock) {
+        return _heightForRowAtIndexPathBlock(tableView, indexPath);
+    }
+
+    return [self.dataSource tableView:self cellForRowAtIndexPath:indexPath].frame.size.height;
+}
+
+- (NSInteger) tableView:(UITableView *)tableView indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (_indentationLevelForRowAtIndexPathBlock) {
+        return _indentationLevelForRowAtIndexPathBlock(tableView, indexPath);
+    }
+
+    return [self.dataSource tableView:self cellForRowAtIndexPath:indexPath].indentationLevel;
+}
+
+- (void) tableView:(UITableView *)tableView performAction:(SEL)action forRowAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
+    if (_performActionForRowAtIndexPathWithSenderBlock) {
+        _performActionForRowAtIndexPathWithSenderBlock(tableView, action, indexPath, sender);
+    }
+}
+
+- (BOOL) tableView:(UITableView *)tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (_shouldIndentWhileEditingRowAtIndexPathBlock) {
+        return _shouldIndentWhileEditingRowAtIndexPathBlock(tableView, indexPath);
+    }
+
+    return YES;
+}
+
+- (BOOL) tableView:(UITableView *)tableView shouldShowMenuForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (_shouldShowMenuForRowAtIndexPathBlock) {
+        return _shouldShowMenuForRowAtIndexPathBlock(tableView, indexPath);
+    }
+
+    return NO;
+}
+
+- (NSIndexPath *) tableView:(UITableView *)tableView targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath toProposedIndexPath:(NSIndexPath *)proposedDestinationIndexPath {
+    if (_targetIndexPathForMoveFromRowAtIndexPathToProposedIndexPathBlock) {
+        return _targetIndexPathForMoveFromRowAtIndexPathToProposedIndexPathBlock(tableView, sourceIndexPath, proposedDestinationIndexPath);
+    }
+
+    return proposedDestinationIndexPath;
+}
+
+- (NSString *) tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (_titleForDeleteConfirmationButtonForRowAtIndexPathBlock) {
+        return _titleForDeleteConfirmationButtonForRowAtIndexPathBlock(tableView, indexPath);
+    }
+
+    return nil;
+}
+
+- (UIView *) tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    if (_viewForFooterInSectionBlock) {
+        return _viewForFooterInSectionBlock(tableView, section);
+    }
+
+    return nil;
+}
+
+- (UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    if (_viewForHeaderInSectionBlock) {
+        return _viewForHeaderInSectionBlock(tableView, section);
+    }
+
+    return nil;
+}
+
+- (void) tableView:(UITableView *)tableView willBeginEditingRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (_willBeginEditingRowAtIndexPathBlock) {
+        _willBeginEditingRowAtIndexPathBlock(tableView, indexPath);
+    }
+}
+
+- (NSIndexPath *) tableView:(UITableView *)tableView willDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (_willDeselectRowAtIndexPathBlock) {
+        return _willDeselectRowAtIndexPathBlock(tableView, indexPath);
+    }
+
+    return indexPath;
+}
+
+- (void) tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (_willDisplayCellForRowAtIndexPathBlock) {
+        _willDisplayCellForRowAtIndexPathBlock(tableView, cell, indexPath);
+    }
+}
+
+- (NSIndexPath *) tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (_willSelectRowAtIndexPathBlock) {
+        return _willSelectRowAtIndexPathBlock(tableView, indexPath);
+    }
+
+    return indexPath;
+}
+
+
+
+
 #pragma mark UITableViewDataSource Methods (optional)
 
 
