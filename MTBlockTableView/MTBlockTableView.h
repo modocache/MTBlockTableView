@@ -6,8 +6,6 @@
 //  Copyright (c) 2012 Mysterious Trousers. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface MTBlockTableView : UITableView <UITableViewDelegate, UITableViewDataSource>
 
 #pragma mark UITableViewDataSource blocks (required)
