@@ -8,5 +8,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/mysterioustrousers/MTBlockTableView.git", :tag => "0.0.1" }
   s.source_files = 'MTBlockTableView/*.{h,m}'
   s.requires_arc = true
+  s.platform     = :ios
   s.framework    = 'UIKit'
 end
